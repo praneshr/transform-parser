@@ -1,0 +1,17 @@
+{
+  "name": "transform-parser",
+  "version": "1.0.0",
+  "description": "Parses css transform string and returns an transform object using vanilla JS",
+  "main": "index.js",
+  "repository": "https://github.com/praneshr/transform-parser.git",
+  "author": "Pranesh Ravi <praneshpranesh@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "typescript": "^3.5.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w"
+  }
+}
