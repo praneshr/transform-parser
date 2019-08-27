@@ -1,8 +1,11 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    "target": "es6",
+    "target": "esnext",
     "module": "umd",
     "allowUmdGlobalAccess": true,
-  }
+  },
+  "files": [
+    "index.ts"
+  ]
 }
