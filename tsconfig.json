@@ -4,6 +4,7 @@
     "target": "esnext",
     "module": "umd",
     "allowUmdGlobalAccess": true,
+    "declaration": true,
   },
   "files": [
     "index.ts"
