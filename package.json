@@ -1,6 +1,6 @@
 {
   "name": "transform-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converts css transform string to an object and vice versa",
   "main": "index",
   "typings": "index",
