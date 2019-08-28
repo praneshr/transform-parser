@@ -1,7 +1,7 @@
 {
   "name": "transform-parser",
   "version": "1.0.0",
-  "description": "Parses css transform string and returns an transform object using vanilla JS",
+  "description": "Converts css transform string to an object and vice versa",
   "main": "index",
   "typings": "index",
   "repository": "https://github.com/praneshr/transform-parser.git",
@@ -21,13 +21,16 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "expect": "^24.9.0",
     "mocha": "^6.2.0",
+    "rollup": "^1.20.2",
+    "rollup-plugin-typescript2": "^0.23.0",
     "ts-node": "^8.3.0",
+    "tslib": "^1.10.0",
     "typescript": "^3.5.3"
   },
   "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc -w",
+    "build": "rollup -c",
+    "build:watch": "rollup -c -w",
     "test": "mocha -r ts-node/register test/*.ts",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build && yarn test"
   }
 }

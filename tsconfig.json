@@ -2,8 +2,7 @@
   "compileOnSave": true,
   "compilerOptions": {
     "target": "esnext",
-    "module": "umd",
-    "allowUmdGlobalAccess": true,
+    "module": "esnext",
     "declaration": true,
   },
   "files": [
