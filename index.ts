@@ -34,7 +34,7 @@ const parse = (transformString: string): TransformObject => {
   return transforms.reduce((acc, transform: string) => {
     if (!transform) return acc;
     const [name, transformValue] = transform.split('(');
-    const valueArray = transformValue.split(',');
+    const valueArray = transformValue.split(/\s|,/);
     const values = valueArray.map((val) => {
       return parsePixelValues(val.endsWith(')') ? val.replace(')', '') : val.trim());
     });
